@@ -15,12 +15,7 @@ class Unit:
     def move(self, field):
         field.set_unit(x=self.x, y=self.y, unit=self)
 
-class GameItem():
-    def __init__(self, name: str):
-        self.name = name
-
-    def step_on(self, unit: Unit):
-        pass
+# удален class GameItem():
 
 class Field:
     def set_unit(self, x, y, unit: Unit):

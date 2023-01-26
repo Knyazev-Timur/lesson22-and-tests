@@ -45,6 +45,43 @@ class Obj:
     def trap_attack(self):
         print("It's a trap!")
 
+
+class Warrior:
+    def attack(self):
+        pass
+
+    def defense(self):
+        pass
+
+    def move(self):
+        pass
+
+class Healer(Warrior):
+    def attack(self):
+        return None
+
+    def heal(self):
+        pass
+
+
+class Tree(Warrior):
+
+    def on_fire(self):
+        pass
+
+    def attack(self):
+        return None
+
+    def move(self):
+        return None
+
+
+
+class Trap:
+    def attack(self):
+        pass
+
+
 if __name__ == '__main__':
     unit = Warrior()
     healer = Healer()
